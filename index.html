@@ -17,6 +17,7 @@
 							<li><a href="#intro">About me</a></li>
 							<li><a href="#ntd">Java microservice & testing</a></li>
 							<li><a href="#dark-python">Python test automation</a></li>
+							<li><a href="#gitlab-ci">Custom GitLab CI functionality</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -181,8 +182,7 @@
 						<div class="content">
 							<div class="inner">
 								<h2>Python test automation</h2>
-								<p>Tests are written with pytest automation framework and simple requests library.
-								</p>
+								<p>Tests are written with pytest automation framework and simple requests library.</p>
 								<ul class="actions">
 									<li><a href="https://github.com/alexandrchumakin/payments-api-tests" class="button">Open test project</a></li>
 								</ul>
@@ -204,9 +204,42 @@
 						<div class="content">
 							<div class="inner">
 								<h2>Test report</h2>
-								<p>In order to generate test report I used <a href="https://pypi.org/project/pytest-html/">pytest-html</a> technology and uploaded it to GitHub pages via pipeline</p>
+								<p>In order to generate test report I used <a href="https://pypi.org/project/pytest-html/">pytest-html</a> 
+									technology and uploaded it to GitHub pages via pipeline</p>
 								<ul class="actions">
 									<li><a href="https://alexandrchumakin.github.io/payments-api-tests/" class="button">Test execution report</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<!-- GitLab CI -->
+				<section id="gitlab-ci" class="wrapper style2 spotlights">
+					<section>
+						<div class="content">
+							<div class="inner">
+								<h2>Retrieve artifacts from child pipeline</h2>
+								<p>Some pipelines might build artifacts in downstream pipelines while it's still required to
+									reuse these artifacts by another pipelines. There is no mechanism in GitLab to retrieve artifacts
+									from downstream pipeline of another pipeline. I implemented a custom functionality to retrieve
+									GitLab artifacts from downstream pipeline to parent level.
+								</p>
+								<ul class="actions">
+									<li><a href="https://gitlab.com/alexandrchumakin/retrieve-child-artifacts" class="button">GitLab repo example</a></li>
+									<li><a href="https://medium.com/@achumakin/retrieve-gitlab-ci-artifacts-from-child-pipelines-f427d1983d87" class="button">Medium article</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="content">
+							<div class="inner">
+								<h2>Allow only 1 active pipeline per repository</h2>
+								<p>Sometime we need to only allow 1 single pipeline per GitLab repo and put all others in queue until active one is in progress.</p>
+								<ul class="actions">
+									<li><a href="https://gitlab.com/alexandrchumakin/wait-pipeline" class="button">Gitlab repo example</a></li>
+									<li><a href="https://medium.com/@achumakin/wait-pipelines-in-gitlab-6a2f91432e77" class="button">Medium article</a></li>
 								</ul>
 							</div>
 						</div>
