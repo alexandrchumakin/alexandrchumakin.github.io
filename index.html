@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Hyperspace by HTML5 UP</title>
+		<title>Alexander Chumakin portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -18,6 +18,7 @@
 							<li><a href="#ntd">Java microservice & testing</a></li>
 							<li><a href="#dark-python">Python test automation</a></li>
 							<li><a href="#gitlab-ci">Custom GitLab CI functionality</a></li>
+							<li><a href="#dark-jmeter">Performance tests with JMeter</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -42,8 +43,9 @@
 									<li>C#</li>
 									<li>Python</li>
 									<li>JavaScript</li>
+									<li>TypeScript</li>
 									<li>Kotlin</li>
-								</ul></p>
+								</ul>
 							</section>
 							<section>
 								<span class="icon solid major fa-briefcase"></span>
@@ -51,10 +53,12 @@
 								<p><ul> 
 									<li>Backend test automation</li>
 									<li>Frontend test automation</li>
+									<li>Mobile test automation</li>
 									<li>Isolated testing</li>
 									<li>Performance testing</li>
 									<li>CI/CD pipelines</li>
-								</ul></p>
+									<li>Infrastructure as Code</li>
+								</ul>
 							</section>
 							<section>
 								<span class="icon solid major fa-tools"></span>
@@ -67,20 +71,22 @@
 									<li>Lombok</li>
 									<li>Postman</li>
 									<li>Cucumber/JBehave/SpecFlow</li>
-								</ul></p>
+									<li>JMeter/K6/Gatling</li>
+								</ul>
 							</section>
 							<section>
 								<span class="icon solid major fa-sitemap"></span>
 								<h3>DevOps technologies</h3>
 								<p><ul>
-									<li>Docker</li>
+									<li>Docker/Docker Compose</li>
 									<li>Kubernetes</li>
-									<li>GitLab CI/GitHub Actions/Jenkins</li>
+									<li>GitLab/GitHub/Jenkins/Bitbucket</li>
 									<li>Unix shell</li>
-									<li>Terraform</li>
+									<li>Terraform/Ansible</li>
 									<li>OpenShift</li>
 									<li>Helm</li>
-								</ul></p>
+									<li>Testkube</li>
+								</ul>
 							</section>
 							<section>
 								<span class="icon major fa-object-group"></span>
@@ -93,7 +99,8 @@
 									<li>Trading</li>
 									<li>Ride sharing</li>
 									<li>Insurance</li>
-								</ul></p>
+									<li>Fitness</li>
+								</ul>
 							</section>
 							<section>
 								<span class="icon solid major fa-rocket"></span>
@@ -102,7 +109,7 @@
 									<li>Certified Kubernetes Application Developer</li>
 									<li>Public speaker</li>
 									<li>Team leading experience</li>
-								</ul></p>
+								</ul>
 							</section>
 						</div>
 						<div>
@@ -168,12 +175,12 @@
 					<section>
 						<div class="content">
 							<div class="inner">
-								<h2>Darklang service</h2>
+								<h2>Darklang Finance service</h2>
 								<p>Microservice is done with <a href="https://darklang.com">Darklang</a> that is innovative technology 
 									to code in cloud right in your browser (currently in private beta mode).
 								</p>
 								<ul class="actions">
-									<li><a href="https://darklang.com/a/alexandrchumakin-finance-app" class="button">Navigate to canva</a></li>
+									<li><a href="https://darklang.com/a/alexandrchumakin-finance-app" class="button">Navigate to canvas</a></li>
 								</ul>
 							</div>
 						</div>
@@ -207,7 +214,7 @@
 								<p>In order to generate test report I used <a href="https://pypi.org/project/pytest-html/">pytest-html</a> 
 									technology and uploaded it to GitHub pages via pipeline</p>
 								<ul class="actions">
-									<li><a href="https://alexandrchumakin.github.io/payments-api-tests/" class="button">Test execution report</a></li>
+									<li><a href="https://alexandrchumakin.github.io/payments-api-tests/" class="button">Tests execution report</a></li>
 								</ul>
 							</div>
 						</div>
@@ -246,13 +253,63 @@
 					</section>
 				</section>
 
+				<!-- JMeter -->
+				<section id="dark-jmeter" class="wrapper style2 spotlights">
+					<section>
+						<div class="content">
+							<div class="inner">
+								<h2>Darklang Payment service</h2>
+								<p>Microservice is done with <a href="https://darklang.com">Darklang</a> that is innovative technology
+									to code in cloud right in your browser (currently in private beta mode).
+								</p>
+								<ul class="actions">
+									<li><a href="https://darklang.com/a/alexandrchumakin-payment-app" class="button">Navigate to canvas</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="content">
+							<div class="inner">
+								<h2>JMeter tests</h2>
+								<p>Tests are done with native JMeter IDE</p>
+								<ul class="actions">
+									<li><a href="https://gitlab.com/alexandrchumakin/payment-portal-performance-tests" class="button">Open test project</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="content">
+							<div class="inner">
+								<h2>GitLab CI</h2>
+								<p>GitLab pipeline is configured to run performance tests in CI</p>
+								<ul class="actions">
+									<li><a href="https://gitlab.com/alexandrchumakin/payment-portal-performance-tests/-/jobs/4150572629" class="button">Test job output</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="content">
+							<div class="inner">
+								<h2>Test report</h2>
+								<p>Report is generated using built-in JMeter mechanism and uploaded to Pages</p>
+								<ul class="actions">
+									<li><a href="https://alexandrchumakin.gitlab.io/payment-portal-performance-tests" class="button">Tests execution report</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</section>
+
 			</div>
 
 		<!-- Footer -->
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Alexander Chumakin. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
