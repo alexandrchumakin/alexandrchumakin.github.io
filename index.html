@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 		<title>Alexander Chumakin portfolio</title>
 		<meta charset="utf-8" />
@@ -19,6 +19,7 @@
 							<li><a href="#dark-python">Python test automation</a></li>
 							<li><a href="#gitlab-ci">Custom GitLab CI functionality</a></li>
 							<li><a href="#dark-jmeter">Performance tests with JMeter</a></li>
+							<li><a href="#k6-testkube">K6 Performance tests in Testkube</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -40,11 +41,11 @@
 								<h3>Main programming languages</h3>
 								<p><ul>
 									<li>Java</li>
-									<li>C#</li>
+									<li>Kotlin</li>
 									<li>Python</li>
+									<li>C#</li>
 									<li>JavaScript</li>
 									<li>TypeScript</li>
-									<li>Kotlin</li>
 								</ul>
 							</section>
 							<section>
@@ -243,7 +244,7 @@
 						<div class="content">
 							<div class="inner">
 								<h2>Allow only 1 active pipeline per repository</h2>
-								<p>Sometime we need to only allow 1 single pipeline per GitLab repo and put all others in queue until active one is in progress.</p>
+								<p>Sometimes we need to only allow 1 single pipeline per GitLab repo and put all others in queue until active one is in progress.</p>
 								<ul class="actions">
 									<li><a href="https://gitlab.com/alexandrchumakin/wait-pipeline" class="button">Gitlab repo example</a></li>
 									<li><a href="https://medium.com/@achumakin/wait-pipelines-in-gitlab-6a2f91432e77" class="button">Medium article</a></li>
@@ -260,7 +261,7 @@
 							<div class="inner">
 								<h2>Darklang Payment service</h2>
 								<p>Microservice is done with <a href="https://darklang.com">Darklang</a> that is innovative technology
-									to code in cloud right in your browser (currently in private beta mode).
+									to code in cloud right in your browser (currently in private beta mode)
 								</p>
 								<ul class="actions">
 									<li><a href="https://darklang.com/a/alexandrchumakin-payment-app" class="button">Navigate to canvas</a></li>
@@ -303,13 +304,55 @@
 					</section>
 				</section>
 
+				<!-- K6 -->
+				<section id="k6-testkube" class="wrapper style2 spotlights">
+					<section>
+						<div class="content">
+							<div class="inner">
+								<h2>Payment service in Minikube</h2>
+								<p>Microservice is done with <a href="https://quarkus.io/">Quarkus</a> framework and configured to run in
+									Kubernetes and Minikube
+								</p>
+								<ul class="actions">
+									<li><a href="https://github.com/alexandrchumakin/payments-demo-quarkus-app" class="button">GitHub repo</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="content">
+							<div class="inner">
+								<h2>K6 tests</h2>
+								<p>K6 performance,
+									<a href="https://testkube.io/">Testkube</a> and
+									<a href="https://grafana.com/">Grafana</a> configurations</p>
+								<ul class="actions">
+									<li><a href="https://github.com/alexandrchumakin/payments-demo-load-tests" class="button">GitHub test project</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="content">
+							<div class="inner">
+								<h2>Medium article</h2>
+								<p>Explains the motivation and all the used technologies</p>
+								<ul class="actions">
+									<li><a href="https://medium.com/@achumakin/continuous-performance-testing-with-k6-and-testkube-58cb7818c27f" class="button">Continuous performance testing with K6 and Testkube
+									</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</section>
+
 			</div>
 
 		<!-- Footer -->
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Alexander Chumakin. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Alexander Chumakin. All rights reserved.</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
